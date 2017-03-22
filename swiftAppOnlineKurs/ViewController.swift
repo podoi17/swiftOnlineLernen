@@ -11,14 +11,14 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var label: UILabel!
+    
+    @IBOutlet var text1: UITextField!
+    
+    @IBOutlet var text2: UITextField!
     var counter = 0;
     @IBAction func button(_ sender: AnyObject) {
-        counter += 1;
-        label.text = String(counter);
-        
-        if counter == 20 {
-            label.text = "hallo"
-        }
+        print(text1.text!);
+        print(text2.text!);
     }
     override func viewDidLoad() {
         super.viewDidLoad()
