@@ -15,6 +15,10 @@ class ViewController: UIViewController {
     @IBAction func button(_ sender: AnyObject) {
         counter += 1;
         label.text = String(counter);
+        
+        if counter == 20 {
+            label.text = "hallo"
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
