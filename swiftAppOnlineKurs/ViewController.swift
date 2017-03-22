@@ -17,8 +17,10 @@ class ViewController: UIViewController {
     @IBOutlet var text2: UITextField!
     var counter = 0;
     @IBAction func button(_ sender: AnyObject) {
-        print(text1.text!);
-        print(text2.text!);
+        
+        
+        label.text = "\(Double(text1.text!)! + Double(text2.text!)!)";
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
